@@ -19,6 +19,10 @@
   
   ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/ff6e7ca9-1091-4c8b-b953-aa5de02ed997)
 
+# curso.ts
+## model
+![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/2c5e4f8f-1b4e-4cbe-a33f-246b250ecec0)
+
  
  
  ## excluir.php
