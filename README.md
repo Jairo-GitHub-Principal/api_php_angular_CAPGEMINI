@@ -1,5 +1,9 @@
 # api_php_angular_CAPGEMINI
 # Corrigindo o metodo excluir 
+## erro que da no console quando eu clico em exluir
+![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/cb953747-d6c6-4939-94be-2783fc99ccf2)
+
+
 # curso.component.html
 
 ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/c6909eb1-8495-4459-83e2-4da968fd74ce)
