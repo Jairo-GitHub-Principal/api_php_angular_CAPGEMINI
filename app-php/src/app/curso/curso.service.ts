@@ -30,6 +30,7 @@ export class CursoService implements OnInit {
 
  
  removerCurso (id:any):Observable<Curso>{
+ 
   const url = `${this.url}excluir?idCurso=${id}`;
   console.log(url); // testar se o id esta indo na url
      return this.http.delete<Curso>(url);
@@ -49,24 +50,56 @@ export class CursoService implements OnInit {
 
    
 
+// atualizar curso
 
+atualizarCurso(c:Curso):Observable<Curso[]>{
+  console.log("chego em curso.service.ts: "+ c.idCurso);
+  
+  // execultar alteração via url
+  const url = `${this.url}alterar?`;
+  return this.http.put(this.url+"alterar.php",c)
+    // percorrer o vetor para saber qual é o id do curso alterado para saber quem tem que ser alterado
+  .pipe(map((res)=>{
+      const cursoAlterado = this.vetor.find((item)=>{
+      return  item['idCurso'] === + ['idCurso'];
+    });
+    // alterar o valor do vetor local
+        if(cursoAlterado){
+          cursoAlterado['nomeCurso']= c['nomeCurso'];
+          cursoAlterado['valorCurso']= c['valorCurso'];
+        }
+        
+        return this.vetor;
+        
+  }))
+    
+}
  
 }
+
+ 
 
 
 /**
- *  removerCurso (c:Curso):Observable<Curso[]> {
-  const parametros =  new HttpParams().set('idCurso',c.idCurso.toString());
  
-  console.log(parametros.toString())
-  return this.http.delete<Curso>(this.url+'excluir',{params:parametros})
+atualizarCurso(c:Curso):Observable<Curso[]>{
+  console.log("chego em curso.service.ts: "+ c.idCurso);
+  // execultar alteração via url
+  const url = `${this.url}alterar?${JSON.stringify(c)}`;
+  return this.http.put(url +'alterar',JSON.stringify(c))
+    // percorrer o vetor para saber qual é o id do curso alterado para saber quem tem que ser alterado
   .pipe(map((res)=>{
-    const filtro = this.vetor.filter((cursos)=>{
-      return cursos['idCurso'] !== c.idCurso;
+      const cursoAlterado = this.vetor.find((item)=>{
+      return  item['idCurso'] === + ['idCurso'];
     });
-    return this.vetor=filtro;
+    // alterar o valor do vetor local
+        if(cursoAlterado){
+          cursoAlterado['nomeCurso']= c['nomeCurso'];
+          cursoAlterado['valorCurso']= c['valorCurso'];
+        }
+        return this.vetor;
   }))
 }
- * 
+ 
  * 
  */

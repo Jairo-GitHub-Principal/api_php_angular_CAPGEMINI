@@ -1,9 +1,9 @@
 <?php
 // variaveis
-$url = "localhost";
-$usuario = "root";
-$senha = "";
-$base = "api";
+$url = "localhost"; // endereço do mysql poderia ser 127.0.0.1
+$usuario = "root"; // usuario de acesso ao mysql
+$senha = ""; // senha de acessa ao mysql
+$base = "api"; // nome do DB
 
 // conexão
 

@@ -5,9 +5,9 @@ $obterDados = file_get_contents("php://input");
 
 $extrair = json_decode($obterDados);
 // separar dados
-$nomeCurso = $extrair->dados->idCurso;
-$nomeCurso = $extrair->dados->nomeCurso;
-$valorCurso=$extrair->dados->valorCurso;
+$idCurso = $extrair->idCurso;
+$nomeCurso = $extrair->nomeCurso;
+$valorCurso=$extrair->valorCurso;
 
 //query sql
 $sql = "UPDATE `curso` SET nomeCurso ='$nomeCurso', valorCurso = $valorCurso WHERE idCurso = $idCurso";
@@ -23,6 +23,6 @@ $curso=[
 ];
 
 // incapsular em um json
-json_encode(['dados'=>$curso]);
+echo(json_encode(['dados'=>$curso]));
 
 ?>

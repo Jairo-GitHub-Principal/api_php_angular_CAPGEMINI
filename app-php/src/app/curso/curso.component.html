@@ -2,7 +2,7 @@
  
 
 <button (click)="selecao()">selecionar</button>
-<button (click)="alterar()">alterar</button>
+
 
 
 
@@ -18,17 +18,18 @@
     </thead>
 
     <tbody  >
-    <tr  *ngFor="let v of vetor" >
+    <tr  *ngFor="let v of vetor">
         <td class="bordaBody">{{v.idCurso}} </td>
         <td class="bordaBody">{{v.nomeCurso}} </td>
         <td class="bordaBody">{{v.valorCurso}}</td>
         <td><button (click)="selecionarCurso(v)">Selecinar curso</button></td>
+        <button (click)="alterar()">alterar</button>
     </tr>
 </tbody>
 </table>
 </div>
 
-<form method="post" style="margin: 10px;">
+<form method="post" style="margin: 10px;" >
     <label style="margin-left: 10px;">nome do curso</label>
     <input style="margin-left: 10px;" type="text" name="nomeCurso" [(ngModel)]="curso.nomeCurso" > 
 
@@ -36,6 +37,7 @@
     <input style="margin-left: 10px;" type="text" name="valorCurso" [(ngModel)]="curso.valorCurso"> 
     <button style="margin-left: 10px;" (click)="cadastro()"> Cadastro </button>
     <button (click)="remover()">remover</button><p></p> 
+   
     <p>{{curso.nomeCurso}}</p> <p>{{curso.valorCurso}}</p>
 </form>
 

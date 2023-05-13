@@ -1,11 +1,11 @@
 <?php
 
-// incluir conexão: entre os parentese estamos chamando o arquivo conexao.php
-include("conexao.php")// pode se dizer que aqui estamos fazendo uma importação do arquivo de conexão, para ter acesso ao codigo que de fato fara a conexão
+include("conexao.php");
 
-// obtendo dados via url
-$idCurso=$_GET["idCurso"];
-alert($idCurso);
+$idCurso=json_decode( $_GET["idCurso"]);
+
+
+
 // comando Sql
 $sql = "DELETE FROM cursos WHERE idCurso = $idCurso";
 

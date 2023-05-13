@@ -20,5 +20,5 @@ $curso=[
     'valorCurso'=>$valorCurso
 ];
 // incapsular em um json
-json_encode($curso);
+echo(json_encode($curso));
 ?>
