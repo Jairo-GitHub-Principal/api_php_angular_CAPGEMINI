@@ -18,7 +18,7 @@
   
   ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/5aaa4aa0-778d-49df-bb74-ad63223db4fe)
 
-  ### e por fim o nosso api php, que conectara ao nosso banco de dados e execultara  os codigos pre definidos para fazer a alteração no DB
+  ### e por fim a nosso api php, que conectara ao nosso banco de dados e execultara  os codigos pre definidos para fazer a alteração no DB
   
   ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/bd3535d7-dbb7-4b7c-a4d2-b7b5ee6d95b7)
 
