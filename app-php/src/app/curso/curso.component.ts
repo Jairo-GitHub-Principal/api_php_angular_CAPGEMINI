@@ -61,6 +61,7 @@ export class CursoComponent implements OnInit {
     this.curso_Service.atualizarCurso(this.curso).subscribe(
       (res)=>{
       
+        
        
         // limpar os valores
         this.curso.nomeCurso = "";
