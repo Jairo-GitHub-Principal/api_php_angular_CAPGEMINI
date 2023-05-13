@@ -12,8 +12,12 @@
   o metodo alterar vai chamar o metodo atualizarCurso() em curso.service.ts, e vai passar para ele o objeto curso, que tem os dados modificados que serão usados para modificar os dados no DB
   ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/475a13e4-a213-4f7b-851e-929dd3d174ff)
   
+  ### metodo atualizarCruso() arquivo curso.service.ts
+  o metodo abaixo esta igual na video aula, esse metodo é chamado pelo metodo alterar() em curos.component.ts, onde ele recebes os dados 
+  ja modificados pelo usuario, e enviara para a api no arquivo auterar.php , onde sera submetido à um código sql, que persistira esses dados no DB api , na tabela cursos, para alterar os dados relacionado ao id que esta sendo passado
   
-  
+  ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/5aaa4aa0-778d-49df-bb74-ad63223db4fe)
+
   
 
   
