@@ -7,7 +7,7 @@
   
   
   
-  ### metodo alterar de curso.component.ts da forma qeu foi implementado na video aula
+  ### metodo alterar de curso.component.ts da forma qeu foi implementado na video aula, porem assim como no cadastrar eu removi o this.vetor=res
   
   ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/475a13e4-a213-4f7b-851e-929dd3d174ff)
 
