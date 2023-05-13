@@ -3,6 +3,7 @@
 // incluir a conexão
 include("conexao.php");
 $obterDados = file_get_contents("php://input");  // ?
+
 $extrair = json_decode($obterDados);
 // separar dados
 // obs.: o nome "cursos" nas duas linhas abaixo e referencia ao nome cursos dado ao json no meotdo de listagem, la no json_encode("cursos"=>$variavel)

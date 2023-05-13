@@ -23,6 +23,7 @@ export class CursoService implements OnInit {
   
    cadastrarCurso(c:Curso):Observable<Curso>{ // recebe como parametro um objeto do tipo Curso
       
+    console.log(this.url+'cadastrar.php',c);
     return this.http.post<Curso>(this.url+'cadastrar.php',c)
            }
      
@@ -53,11 +54,11 @@ export class CursoService implements OnInit {
 // atualizar curso
 
 atualizarCurso(c:Curso):Observable<Curso[]>{
-  console.log("chego em curso.service.ts: "+ c.idCurso);
+  console.log("chego em curso.service.ts: "+c.idCurso);
   
   // execultar alteração via url
-  const url = `${this.url}alterar?`;
-  return this.http.put(this.url+"alterar.php",c)
+ 
+  return this.http.put(this.url+'alterar',{curso:c})
     // percorrer o vetor para saber qual é o id do curso alterado para saber quem tem que ser alterado
   .pipe(map((res)=>{
       const cursoAlterado = this.vetor.find((item)=>{
