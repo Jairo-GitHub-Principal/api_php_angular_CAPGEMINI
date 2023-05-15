@@ -16,7 +16,7 @@
   o metodo abaixo esta igual na video aula, esse metodo é chamado pelo metodo alterar() em curos.component.ts, onde ele recebes os dados 
   ja modificados pelo usuario, e enviara para a api no arquivo auterar.php , onde sera submetido à um código sql, que persistira esses dados no DB api , na tabela cursos, para alterar os dados relacionado ao id que esta sendo passado
   
-  ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/5aaa4aa0-778d-49df-bb74-ad63223db4fe)
+![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/90e9226b-c1db-4cf1-87d4-ef71657b9be7)
 
   ### e por fim a nosso api php, que conectara ao nosso banco de dados e execultara  os codigos pre definidos para fazer a alteração no DB
   
