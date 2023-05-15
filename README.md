@@ -34,7 +34,7 @@ abaixo segue o erro que acontecia antes da correção
 
 ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/b0ed3eeb-c35e-4e60-b9aa-de699077de76)
 
-  
+  abaixo segue o passo a passo do projeto para o crud no DB com angular php e mysql
   [Api_Angular_php.pdf](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/files/11482377/Api_Angular_php.pdf)
 
   
