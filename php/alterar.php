@@ -2,15 +2,17 @@
 // incluir a conexão
 include("conexao.php");
 $obterDados = file_get_contents("php://input");
+//$obterDados=json_decode( $_GET["cursos"]);
+
 
 $extrair = json_decode($obterDados);
 // separar dados
-$idCurso=$extrair->idCurso;
+$idCurso=(int)$extrair->idCurso;
 $nomeCurso=$extrair->nomeCurso;
-$valorCurso=$extrair->valorCurso;
+$valorCurso=(float)$extrair->valorCurso;
 
 //query sql
-$sql = "UPDATE curso SET nomeCurso='$nomeCurso',valorCurso=$valorCurso WHERE idCurso=$idCurso";
+$sql = "UPDATE cursos SET nomeCurso='$nomeCurso',valorCurso=$valorCurso WHERE idCurso=$idCurso";
 
 // Executar a conexão e a pesquiso do sql
 $executar = mysqli_query($conexao,$sql);
@@ -19,10 +21,8 @@ $executar = mysqli_query($conexao,$sql);
 $curso=[
     'idCurso'=> $idCurso,
     'nomeCurso' => $nomeCurso,
-    'valorCurso'=> $valorCurso
-];
-
+    'valorCurso'=> $valorCurso];
 // incapsular em um json
-json_encode($curso);
+echo(json_encode($curso));
 
 ?>
