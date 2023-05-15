@@ -19,10 +19,18 @@
 ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/90e9226b-c1db-4cf1-87d4-ef71657b9be7)
 
   ### e por fim a nosso api php, que conectara ao nosso banco de dados e execultara  os codigos pre definidos para fazer a alteração no DB
+  para fazer com que funcionasse a alteração de dados, foi feito na api no arfquivo cadastrar, um converção dos dados extraido do JSON
+  uma vez que tudo chegava como string, e o DB, precisava de dados do tipo int e decimal, então foi feito a seguinte modificação:
   
-  ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/bd3535d7-dbb7-4b7c-a4d2-b7b5ee6d95b7)
+             isso                                              para isso
+  $idCurso=$extrair->idCurso;                     $idCurso=(int)$extrair->idCurso;
+  $nomeCurso=$extrair->nomeCurso;                      $nomeCurso=$extrair->nomeCurso;
+  $valorCurso=$extrair->valorCurso;             $valorCurso=(float)$extrair->valorCurso;
+  tudo que chegava aqui era string              
+  
+![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/864ab877-0000-4682-80d0-5249af5d856e)
 
-abaixo segue o erro que esta acontecendo 
+abaixo segue o erro que acontecia antes da correção
 
 ![image](https://github.com/Jairo-GitHub-Principal/api_php_angular_CAPGEMINI/assets/106206316/b0ed3eeb-c35e-4e60-b9aa-de699077de76)
 
