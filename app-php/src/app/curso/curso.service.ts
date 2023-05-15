@@ -58,7 +58,7 @@ atualizarCurso(c:Curso):Observable<Curso[]>{
   
   // execultar alteração via url
  
-  return this.http.put(this.url+'alterar',{curso:c})
+  return this.http.put(this.url+'alterar.php/',c)
     // percorrer o vetor para saber qual é o id do curso alterado para saber quem tem que ser alterado
   .pipe(map((res)=>{
       const cursoAlterado = this.vetor.find((item)=>{
